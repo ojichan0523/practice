@@ -1,1 +1,1 @@
-# practice-django
+# Anything code
