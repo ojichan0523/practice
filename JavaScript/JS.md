@@ -1,0 +1,70 @@
+## JavaScript について学んだこと
+
+---
+
+**従来は var 一つで変数定義をしていた,再宣言も可能**
+
+```
+var val1 = 1;
+console.log(val1);
+
+var val1 = 10;
+console.log(val1);
+```
+
+**ES6(ES2015)からは、const,let で変数を定義することが可能となった**
+let の場合
+
+```
+let val2 = "let変数";
+console.log("val2");
+
+letは上書きが可能
+val2 = "let変数上書き"
+console.log("val2");
+
+letは再宣言不可
+let val2 = "let再宣言";
+↑エラーになる(SyntaxError)
+```
+
+const の場合
+
+```
+cosnt val3 = "const変数";
+console.log(const変数);
+
+constは上書き,再宣言不可
+val3 = "const変数を上書き";
+↑エラーになる(SyntaxError)
+```
+
+オブジェクト
+
+```
+const val4 = {
+    name: "お猿",
+    age: 23,
+};
+console.log(val4);
+
+オブジェクトの要素を上書き可能
+val4.name = "ゴリラ";
+
+オブジェクトの要素の追加も可能
+val4.address = "Sendai";
+```
+
+配列
+
+```
+const val5 = [dog','cat'];
+
+変更可能
+val5[0] = "bird";
+
+追加可能
+val5.push("monkey");
+
+console.log(val5);
+```
