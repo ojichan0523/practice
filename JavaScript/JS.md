@@ -13,6 +13,7 @@ console.log(val1);
 ```
 
 **ES6(ES2015)からは、const,let で変数を定義することが可能となった**
+
 let の場合
 
 ```
