@@ -1,6 +1,64 @@
 body {
   font-family: sans-serif;
 }
-p {
-  color: red;
+
+input {
+  border-radius: 10px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 6px 16px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.list-title {
+  margin-right: 10px;
+}
+
+.input-area {
+  background-color: aqua;
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.imcomplate-area {
+  background-color: bisque;
+  width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.complate-area {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
