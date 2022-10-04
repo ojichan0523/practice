@@ -32,10 +32,14 @@ button:hover {
   display: flex;
   align-items: center;
   padding-bottom: 5px;
+  text-decoration: none;
 }
 
 .list-title {
   margin-right: 10px;
+}
+ul {
+  text-decoration: none;
 }
 
 .input-area {
