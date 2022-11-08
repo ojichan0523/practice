@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap5 通过Data属性添加滚动监听 - 迹忆客(jiyik.com)</title>
+    <title>Bootstrap5</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="../TestScreen/css/style.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       body {
@@ -16,20 +17,19 @@
     </style>
   </head>
   <body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#myNavbar">
-    <nav id="myNavbar" class="navbar navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand">Navbar</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
+    <div class="container-fluid m-0 p-0">
+      <nav id="myNavbar" class="d-flex bg-light fixed-top">
+        <ul class="nav nav-pills inline-block overflow-auto text-nowrap">
+          <li class="nav-item inline-block">
             <a href="#section1" class="nav-link">Section 1</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item inline-block">
             <a href="#section2" class="nav-link">Section 2</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item inline-block">
             <a href="#section3" class="nav-link">Section 3</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item inline-block dropdown">
             <a
               href="#"
               class="nav-link dropdown-toggle"
@@ -42,14 +42,22 @@
               <a href="#section4dot3" class="dropdown-item">Section 4.3</a>
             </div>
           </li>
-          <li>
+          <li class="nav-item inline-block">
             <a href="#section5" class="nav-link">Section 5</a>
           </li>
+          <li class="nav-item inline-block">
+            <a href="#section6" class="nav-link">Section 6</a>
+          </li>
+          <li class="nav-item inline-block">
+            <a href="#section7" class="nav-link">Section 7</a>
+          </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <div class="container" style="padding-top: 70px">
-      <h1 style="margin-bottom: 300px">Bootstrap Scrollspy</h1>
+      <h1 style="margin-bottom: 300px; margin-top: 40px">
+        Bootstrap Scrollspy
+      </h1>
       <p class="lead">
         <i
           >Scroll this web page and see how the navbar items are highlighted
@@ -57,7 +65,7 @@
           submenu will be highlighted as well.</i
         >
       </p>
-      <div id="section1" style="padding-top: 30px; margin-top: -30px">
+      <div id="section1" style="padding-top: 50px; margin-top: -50px">
         <h2>Section 1</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
@@ -117,7 +125,7 @@
         </p>
       </div>
       <hr />
-      <div id="section2" style="padding-top: 30px; margin-top: -30px">
+      <div id="section2" style="padding-top: 50px; margin-top: -50px">
         <h2>Section 2</h2>
         <p>
           Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis
@@ -192,7 +200,7 @@
         </p>
       </div>
       <hr />
-      <div id="section3" style="padding-top: 30px; margin-top: -30px">
+      <div id="section3" style="padding-top: 50px; margin-top: -50px">
         <h2>Section 3</h2>
         <p>
           Integer pulvinar leo id risus pellentesque vestibulum. Sed diam
@@ -234,7 +242,7 @@
         Nam eget purus nec est consectetur vehicula. Nullam ultrices nisl risus,
         in viverra libero egestas sit amet.
       </p>
-      <div id="section4dot1" style="padding-top: 30px; margin-top: -30px">
+      <div id="section4dot1" style="padding-top: 50px; margin-top: -50px">
         <h3>Section 4.1</h3>
         <p>
           In mauris nunc, convallis eget pretium eu, bibendum non leo. Proin
@@ -295,7 +303,7 @@
           purus. Vivamus non metus ac justo porta volutpat.
         </p>
       </div>
-      <div id="section4dot2" style="padding-top: 30px; margin-top: -30px">
+      <div id="section4dot2" style="padding-top: 50px; margin-top: -50px">
         <h3>Section 4.2</h3>
         <p>
           Pellentesque viverra, velit eu blandit viverra, justo nulla vestibulum
@@ -360,7 +368,7 @@
           dignissim leo.
         </p>
       </div>
-      <div id="section4dot3" style="padding-top: 30px; margin-top: -30px">
+      <div id="section4dot3" style="padding-top: 50px; margin-top: -50px">
         <h3>Section 4.3</h3>
         <p>
           Fusce enim arcu, interdum vel metus dignissim, venenatis feugiat
@@ -423,7 +431,7 @@
         </p>
       </div>
       <hr />
-      <div id="section5" style="padding-top: 30px; margin-top: -30px">
+      <div id="section5" style="padding-top: 50px; margin-top: -50px">
         <h2>Section 5</h2>
         <p>
           Meget purus nec est consectetur vehicula. Nullam ultrices nisl risus,
@@ -504,19 +512,108 @@
           ullamcorper purus. Vivamus non metus ac justo porta volutpat.
         </p>
         <p>
-          Maecenas ullamcorper, turpis suscipit pellentesque fringilla, massa
-          lacus pulvinar mi, nec dignissim velit arcu eget purus. Nam at dapibus
-          tellus, eget euismod nisl. Ut eget venenatis sapien. Vivamus vulputate
-          varius mauris, vel varius nisl facilisis ac. Nulla aliquet justo a
-          nibh ornare, eu congue neque rutrum. Vamus mattis accumsan erat, vel
-          convallis risus pretium nec. Integer nunc nulla, viverra ut sem non,
-          scelerisque vehicula arcu. Fusce bibendum convallis augue sit amet
-          lobortis. Cras porta urna turpis, sodales lobortis purus adipiscing
-          id. Maecenas ullamcorper, turpis suscipit pellentesque fringilla,
-          massa lacus pulvinar mi, nec dignissim velit arcu eget purus. Nam at
-          dapibus tellus, eget euismod nisl. Ut eget venenatis sapien. Vivamus
-          vulputate varius mauris, vel varius nisl facilisis ac. Nulla aliquet
-          justo a nibh ornare, eu congue neque rutrum.
+          Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi.
+          Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec
+          volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit
+          egestas a. Sed luctus metus id mi gravida, faucibus convallis neque
+          pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet
+          leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices
+          nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra
+          tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum
+          sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius
+          libero.
+        </p>
+        <p>
+          Fermentum ipsum. Morbi a orci vulputate tortor ornare blandit a quis
+          orci. Donec aliquam sodales gravida. In ut ullamcorper nisi, ac
+          pretium velit. Vestibulum vitae lectus volutpat, consequat lorem sit
+          amet, pulvinar tellus. In tincidunt vel leo eget pulvinar. Curabitur a
+          eros non lacus malesuada aliquam. Praesent et tempus odio. Integer a
+          quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla,
+          et mattis turpis placerat eget. Pellentesque dui diam, pellentesque
+          vel gravida id, accumsan eu magna.
+        </p>
+      </div>
+      <div id="section6" style="padding-top: 50px; margin-top: -50px">
+        <h2>Section 6</h2>
+        <p>
+          Meget purus nec est consectetur vehicula. Nullam ultrices nisl risus,
+          in viverra libero egestas sit amet. Etiam porttitor dolor non eros
+          pulvinar malesuada. Vestibulum sit amet est mollis nulla tempus
+          aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi consequat
+          placerat magna, ac ornare odio sagittis sed. Donec vitae ullamcorper
+          purus. Vivamus non metus ac justo porta volutpat. Malesuada.
+          Vestibulum sit amet est mollis nulla tempus aliquet. Praesent luctus
+          hendrerit arcu non laoreet. Morbi consequat placerat magna, ac ornare
+          odio sagittis sed. Donec vitae ullamcorper purus. Vivamus non metus ac
+          justo porta volutpat. Integer a quam nunc. In hac habitasse platea
+          dictumst. Aliquam porta nibh nulla, et mattis turpis placerat eget.
+          Pellentesque dui diam, pellentesque vel gravida id, accumsan eu magna.
+          Sed a semper arcu, ut dignissim leo.
+        </p>
+        <p>
+          Vamus mattis accumsan erat, vel convallis risus pretium nec. Integer
+          nunc nulla, viverra ut sem non, scelerisque vehicula arcu. Fusce
+          bibendum convallis augue sit amet lobortis. Cras porta urna turpis,
+          sodales lobortis purus adipiscing id. Maecenas ullamcorper, turpis
+          suscipit pellentesque fringilla, massa lacus pulvinar mi, nec
+          dignissim velit arcu eget purus. Nam at dapibus tellus, eget euismod
+          nisl. Ut eget venenatis sapien. Vivamus vulputate varius mauris, vel
+          varius nisl facilisis ac. Nulla aliquet justo a nibh ornare, eu congue
+          neque rutrum. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi
+          vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales
+          libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          Curae; Sed eu elementum nibh, quis varius libero.
+        </p>
+        <p>
+          Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi.
+          Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec
+          volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit
+          egestas a. Sed luctus metus id mi gravida, faucibus convallis neque
+          pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet
+          leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices
+          nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra
+          tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum
+          sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius
+          libero.
+        </p>
+        <p>
+          Orbised fermentum ipsum. Morbi a orci vulputate tortor ornare blandit
+          a quis orci. Donec aliquam sodales gravida. In ut ullamcorper nisi, ac
+          pretium velit. Vestibulum vitae lectus volutpat, consequat lorem sit
+          amet, pulvinar tellus. In tincidunt vel leo eget pulvinar. Curabitur a
+          eros non lacus malesuada aliquam. Praesent et tempus odio. Integer a
+          quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla,
+          et mattis turpis placerat eget. Pellentesque dui diam, pellentesque
+          vel gravida id, accumsan eu magna. Sed a semper arcu, ut dignissim
+          leo.
+        </p>
+        <p>
+          Aliquam consequat ipsum quis est dictum ultrices. Aenean nibh velit,
+          fringilla in diam id, blandit hendrerit lacus. Donec vehicula rutrum
+          tellus eget fermentum. Pellentesque ac erat et arcu ornare tincidunt.
+          Vitae lobortis diam, id molestie magna. Aliquam consequat ipsum quis
+          est dictum ultrices. Aenean nibh velit, fringilla in diam id, blandit
+          hendrerit lacus. Donec vehicula rutrum tellus eget fermentum.
+          Pellentesque ac erat et arcu ornare tincidunt. Aliquam erat volutpat.
+          Vivamus lobortis urna quis gravida semper. In condimentum, est a
+          faucibus luctus, mi dolor cursus mi, id vehicula arcu risus a nibh.
+          Pellentesque blandit sapien lacus, vel vehicula nunc feugiat sit amet.
+        </p>
+        <p>
+          Etiam porttitor dolor non eros pulvinar malesuada. Vestibulum sit amet
+          est mollis nulla tempus aliquet. Praesent luctus hendrerit arcu non
+          laoreet. Morbi consequat placerat magna, ac ornare odio sagittis sed.
+          Donec vitae ullamcorper purus. Vivamus non metus ac justo porta
+          volutpat. Meget purus nec est consectetur vehicula. Nullam ultrices
+          nisl risus, in viverra libero egestas sit amet. Etiam porttitor dolor
+          non eros pulvinar malesuada. Vestibulum sit amet est mollis nulla
+          tempus aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi
+          consequat placerat magna, ac ornare odio sagittis sed. Donec vitae
+          ullamcorper purus. Vivamus non metus ac justo porta volutpat.
         </p>
         <p>
           Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi.
@@ -542,6 +639,138 @@
           vel gravida id, accumsan eu magna.
         </p>
       </div>
+      <div id="section7" style="padding-top: 50px; margin-top: -50px">
+        <h2>Section 7</h2>
+        <p>
+          Meget purus nec est consectetur vehicula. Nullam ultrices nisl risus,
+          in viverra libero egestas sit amet. Etiam porttitor dolor non eros
+          pulvinar malesuada. Vestibulum sit amet est mollis nulla tempus
+          aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi consequat
+          placerat magna, ac ornare odio sagittis sed. Donec vitae ullamcorper
+          purus. Vivamus non metus ac justo porta volutpat. Malesuada.
+          Vestibulum sit amet est mollis nulla tempus aliquet. Praesent luctus
+          hendrerit arcu non laoreet. Morbi consequat placerat magna, ac ornare
+          odio sagittis sed. Donec vitae ullamcorper purus. Vivamus non metus ac
+          justo porta volutpat. Integer a quam nunc. In hac habitasse platea
+          dictumst. Aliquam porta nibh nulla, et mattis turpis placerat eget.
+          Pellentesque dui diam, pellentesque vel gravida id, accumsan eu magna.
+          Sed a semper arcu, ut dignissim leo.
+        </p>
+        <p>
+          Vamus mattis accumsan erat, vel convallis risus pretium nec. Integer
+          nunc nulla, viverra ut sem non, scelerisque vehicula arcu. Fusce
+          bibendum convallis augue sit amet lobortis. Cras porta urna turpis,
+          sodales lobortis purus adipiscing id. Maecenas ullamcorper, turpis
+          suscipit pellentesque fringilla, massa lacus pulvinar mi, nec
+          dignissim velit arcu eget purus. Nam at dapibus tellus, eget euismod
+          nisl. Ut eget venenatis sapien. Vivamus vulputate varius mauris, vel
+          varius nisl facilisis ac. Nulla aliquet justo a nibh ornare, eu congue
+          neque rutrum. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi
+          vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales
+          libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          Curae; Sed eu elementum nibh, quis varius libero.
+        </p>
+        <p>
+          Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi.
+          Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec
+          volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit
+          egestas a. Sed luctus metus id mi gravida, faucibus convallis neque
+          pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet
+          leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices
+          nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra
+          tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum
+          sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius
+          libero.
+        </p>
+        <p>
+          Orbised fermentum ipsum. Morbi a orci vulputate tortor ornare blandit
+          a quis orci. Donec aliquam sodales gravida. In ut ullamcorper nisi, ac
+          pretium velit. Vestibulum vitae lectus volutpat, consequat lorem sit
+          amet, pulvinar tellus. In tincidunt vel leo eget pulvinar. Curabitur a
+          eros non lacus malesuada aliquam. Praesent et tempus odio. Integer a
+          quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla,
+          et mattis turpis placerat eget. Pellentesque dui diam, pellentesque
+          vel gravida id, accumsan eu magna. Sed a semper arcu, ut dignissim
+          leo.
+        </p>
+        <p>
+          Aliquam consequat ipsum quis est dictum ultrices. Aenean nibh velit,
+          fringilla in diam id, blandit hendrerit lacus. Donec vehicula rutrum
+          tellus eget fermentum. Pellentesque ac erat et arcu ornare tincidunt.
+          Vitae lobortis diam, id molestie magna. Aliquam consequat ipsum quis
+          est dictum ultrices. Aenean nibh velit, fringilla in diam id, blandit
+          hendrerit lacus. Donec vehicula rutrum tellus eget fermentum.
+          Pellentesque ac erat et arcu ornare tincidunt. Aliquam erat volutpat.
+          Vivamus lobortis urna quis gravida semper. In condimentum, est a
+          faucibus luctus, mi dolor cursus mi, id vehicula arcu risus a nibh.
+          Pellentesque blandit sapien lacus, vel vehicula nunc feugiat sit amet.
+        </p>
+        <p>
+          Etiam porttitor dolor non eros pulvinar malesuada. Vestibulum sit amet
+          est mollis nulla tempus aliquet. Praesent luctus hendrerit arcu non
+          laoreet. Morbi consequat placerat magna, ac ornare odio sagittis sed.
+          Donec vitae ullamcorper purus. Vivamus non metus ac justo porta
+          volutpat. Meget purus nec est consectetur vehicula. Nullam ultrices
+          nisl risus, in viverra libero egestas sit amet. Etiam porttitor dolor
+          non eros pulvinar malesuada. Vestibulum sit amet est mollis nulla
+          tempus aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi
+          consequat placerat magna, ac ornare odio sagittis sed. Donec vitae
+          ullamcorper purus. Vivamus non metus ac justo porta volutpat.
+        </p>
+        <p>
+          Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi.
+          Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec
+          volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit
+          egestas a. Sed luctus metus id mi gravida, faucibus convallis neque
+          pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet
+          leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices
+          nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra
+          tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum
+          sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius
+          libero.
+        </p>
+        <p>
+          Fermentum ipsum. Morbi a orci vulputate tortor ornare blandit a quis
+          orci. Donec aliquam sodales gravida. In ut ullamcorper nisi, ac
+          pretium velit. Vestibulum vitae lectus volutpat, consequat lorem sit
+          amet, pulvinar tellus. In tincidunt vel leo eget pulvinar. Curabitur a
+          eros non lacus malesuada aliquam. Praesent et tempus odio. Integer a
+          quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla,
+          et mattis turpis placerat eget. Pellentesque dui diam, pellentesque
+          vel gravida id, accumsan eu magna.
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid m-0 p-0 text-center">
+      <image
+        src="../TestScreen/images/add_circle.svg"
+        width="20"
+        height="20"
+      ></image>
+      <input
+        type="number"
+        id="name"
+        name="name"
+        required
+        minlength="1"
+        maxlength="4"
+        size="5"
+        style="margin: 0.4rem 0; width: 30px"
+        class="text-center"
+      />
+      <image
+        src="../TestScreen/images/add_circle.svg"
+        width="20"
+        height="20"
+      ></image>
+    </div>
+    <div class="container-fluid m-0 p-0 text-center">
+      <button type="button" class="btn btn-primary rounded-pill">
+        Primary
+      </button>
     </div>
   </body>
 </html>
